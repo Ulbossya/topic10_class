@@ -1,0 +1,227 @@
+//copy past
+// class Person{ } // пустой класс Person
+ 
+// void main() {
+      
+//     Person tom = Person();     // создаем объект класса Person
+//     print(tom);
+// }
+
+
+// class Person{
+     
+//     String name = "";       // имя
+//     int age = 0;                    // возраст
+//     void display(){
+//         print("Name: $name \tAge: $age");
+//     }
+// }
+
+
+// class Person{ 
+ 
+//     String name = "";       // имя
+//     int age = 0;                    // возраст
+//     void display(){
+//         print("Name: $name \tAge: $age");
+//     }
+// }
+ 
+// void main() {
+      
+//     Person tom = Person();  // создаем объект класса Person
+//     print(tom.age);     // обращаемся к полю age
+//     tom.display();          // обращаемся к методу display
+ 
+//     // изменяем имя и возраст
+//     tom.name = "Tom";
+//     tom.age = 38;
+//     tom.display();
+// }
+
+
+// class Person{ 
+ 
+//     String? name;       // равно null
+//     int? age;           // равно null
+//     void display(){
+//         print("Name: $name \tAge: $age");
+//     }
+// }
+ 
+// void main() {
+      
+//     Person tom = Person();
+//     tom.display();          // Name: null      Age: null
+ 
+//     tom.name = "Tom";
+//     tom.age = 38;
+//     tom.display();          // Name: Tom       Age: 38
+// }
+
+
+// class Person{
+  
+//     String name = "";
+//     int age = 0;
+      
+//     void display(){
+//         print("Name: $name \tAge: $age");
+//     }
+// }
+// void main (){
+     
+//     Person tom = Person()
+//         ..name = "Tom"
+//         ..age = 38
+//         ..display();    // Name: Tom  Age: 38
+// } 
+
+// void main (){
+     
+//     Person tom = Person();
+//     tom.name = "Tom"
+//     tom.age = 36
+//     tom.display();  // Name: Tom  Age: 36
+// } 
+
+
+// class Person{
+ 
+//     String name ="";
+// }
+ 
+// void main() {
+ 
+//     Person tom = Person();
+//     tom.name = "Tom";
+ 
+//     Person bob = tom;   // bob указывает на тот же объект, что и tom
+//     bob.name = "Bob";   // меняем у boba имя
+//     print(tom.name);    // Bob - у toma тоже поменялось имя
+// }
+
+
+
+
+//Define a Dart function student(). Using function attributes display the names of all arguments.
+// void main() {
+//   student(
+//     full_name: 'Sayakbay Ulbosyn',
+//     college: 'JIHC',
+//     course: '4E',
+//   );
+// }
+// void student({
+//   required String  full_name,
+//   required String college,
+//   required String course,
+// }) {
+//   print('$full_name');
+//   print('$college');
+//   print('$course');
+// }
+//Write a Dart function student_data () that will print the ID of a student (student_id). If the user passes an argument student_name or student_class the function will print the student name and class
+// void main() {
+//   student_data(student_id: 2020202);
+
+//   student_data(student_full_name: 'Sayakbay Ulbosyn', student_class: 'Class-4E');
+// }
+
+// void student_data(
+//     {int? student_id, String? student_full_name, String? student_class}) {
+//   if (student_id != null) {
+//     print('Student_Id- $student_id');
+//   }
+
+//   if (student_full_name != null && student_class != null) {
+//     print('student_full_name- $student_full_name');
+//     print('Student_Class- $student_class');
+//   }
+// }
+//Write a Dart program to create two empty classes, Student and Marks. Create Students with marks, and display info with constructors.
+// void main() {
+//   var student_Marks = Marks(87, 90, 95);
+
+//   var student = Student('Sayakbay Ulbosyn', '4E', student_Marks);
+
+//   print('Student Info');
+//   print(student);
+// }
+
+// class Marks {
+//   int algorithm;
+//   int mobilka;
+//   int design;
+
+//   Marks(this.algorithm, this.mobilka, this.design);
+
+//   @override
+//   String toString() {
+//     return '$algorithm, $mobilka, $design';
+//   }
+// }
+
+// class Student {
+//   String name;
+//   String course;
+//   Marks marks;
+
+//   Student(this.name, this.course, this.marks);
+
+//   @override
+//   String toString() {
+//     return 'Name: $name, Course: $course\nMarks: $marks';
+//   }
+// }
+//Write a Dart class named Student with two attributes student_name and gpa. Modify the attribute values of the said class and print the original and modified values of the said attributes.
+// void main() {
+//   var student1 = Student('Sayakbay Ulbosyn', 90);
+//   var student2 = Student('Omarova Merey', 85);
+
+//   print('Student_Information');
+//   print(student1);
+//   print(student2);
+// }
+
+// class Student {
+//   String gpa1;
+//   dynamic gpa2;
+//   Student(this.gpa1 this.gpa2);
+//   @override
+//   String toString() {
+//     return "Name is $gpa1 and Mark is $gpa2";
+//   }
+// }
+// Write a Dart class named Student with the following attributes:
+// student_id, 
+// student_name,
+// student_age,
+// phone_number,
+// univercity 
+//Create 6 types of constructors and get/set methods for each attributes.
+// void main() {
+//   var t = Student(2020200, 'Ulbosyn', 19, 87082211238, '4E');
+//   print(t);
+// }
+
+// class Student {
+//   int student_id;
+//   String student_name;
+//   int student_age;
+//   int phone_number;
+//   String course;
+
+//   Student(
+//     this.student_id,
+//     this.student_name,
+//     this.student_age,
+//     this.phone_number,
+//     this.course,
+//   );
+
+//   @override
+//   String toString() {
+//     return "Id: $student_id \nName: $student_name \nAge: $student_age \nNumber: $phone_number \nUniversity: $course ";
+//   }
+// }
